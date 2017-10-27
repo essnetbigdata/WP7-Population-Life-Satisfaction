@@ -19,7 +19,7 @@ keyword=":("<br/>
 You can execute the file by writing:<br/>
 python3 WP7_STEP1_collecting_tweets.py<br/>
 If you have problems with Python on your computer, just ask Jacek for help.<br/>
-Repeat the step 1.3 with different keywords to create several different files for the next task – identifying tweets. The results will be stored in the files: WP7_keyword_??????.csv.<br/>
+Repeat the step 1.3 with different keywords to create several different files for the next task – identifying tweets. The results will be stored in the files: <i>WP7_keyword_??????.csv</i>.<br/>
 <b>1.4.	Manual work – identifying tweets</b><br/>
 Based on your collected CSV files, add additional column named sentiment and try to identify each tweet with the following rules, according to the European Social Survey, Social Cohesion Survey and EU Statistics on Income and Living Conditions (EU-SILC): <br/>
 1)	happy<br/>
@@ -39,7 +39,7 @@ No.	Tweet	Sentiment<br/>
 1	Wieczorny spacer :) Coś przyjemnego na koniec dnia :D  #spacer #zima #odpoczynek	happy<br/>
 2	#spacer w otoczeniu pięknej śnieżnej zimy #odpoczynek 	neutral <br/>
 3	Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend	neutral <br/>
-Save this file as WP7_training_data.csv because it will be used in the next<br/> step.
+Save this file as <i>WP7_training_data.csv</i> because it will be used in the next step.<br/>
 <b>2.2. Test the dataset with the training data</b><br/>
 The goal of this step is to know the accuracy of your training dataset.<br/>
 You have to execute the file like this:<br/>
