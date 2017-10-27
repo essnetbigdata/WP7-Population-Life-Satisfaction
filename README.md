@@ -44,9 +44,8 @@ Save this file as <i>WP7_training_data.csv</i> because it will be used in the ne
 The goal of this step is to know the accuracy of your training dataset.<br/>
 You have to execute the file like this:<br/>
 python3 WP7_STEP2_testing_dataset.py<br/>
-Then analyze the results, like this:<br/>
+Then analyze the results, like this:<br/><br/>
                precision    recall  f1-score   support<br/>
-<br/>
         happy       0.62      0.75      0.68        56<br/>
       neutral       0.60      0.71      0.65        34<br/>
          calm       0.43      0.30      0.35        10<br/>
@@ -54,7 +53,6 @@ Then analyze the results, like this:<br/>
     depressed       0.59      0.62      0.60        21<br/>
   discouraged       0.59      0.50      0.54        20<br/>
 indeterminate       0.00      0.00      0.00         3<br/>
-<br/>
   avg / total       0.59      0.60      0.58       157<br/>
 <br/>
 It means that dataset still need some enhancement for a few keywords.<br/>
