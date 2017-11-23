@@ -1,3 +1,6 @@
+# WP7 Population Life Satisfaction Use Case
+# If you need more information:
+# Contact: j.maslankowski@stat.gov.pl
 
 import pandas as pd
 import numpy as np 
@@ -25,18 +28,19 @@ POLISH_STOP_WORDS=["ach","aj","albo","bardzo","bez","bo","być","ci","cię","cie
     "tylko","będą","będzie","taka","było","te"]
 
 
-# !!! CHANGE THE FILENAME TO THE ENTERPRISE COLLECTED IN STEP2
-test_data_file_name='WP7_testing_data.csv'
-train_data_file_name='WP7_training_data.csv'
+# !!! CHANGE THE FILENAME TO THE DATA COLLECTED IN STEP2
+test_data_file_name='WP7_testing_data_2a.csv'
+train_data_file_name='WP7_training_data_2a.csv'
 test_data_df = pd.read_csv(test_data_file_name, header=None, delimiter=";")
 test_data_df.columns = ["Text"]
 train_data_df = pd.read_csv(train_data_file_name, header=None, delimiter=";")
-train_data_df.columns = ["Type","TypeText","Text"]
+train_data_df.columns = ["Id","TypeText","Text","Type"]
 TypeText=['happy','neutral','calm','upset','depressed','discouraged','indeterminate']
 
 np.mean([len(s.split(" ")) for s in train_data_df.Text])
 
 stemmer = PorterStemmer()
+
 def stem_tokens(tokens, stemmer):
     stemmed = []
     for item in tokens:
@@ -89,7 +93,7 @@ for text, type in zip(test_data_df.Text[spl], test_pred[spl]):
     print (TypeText[type-1],':', text)
     purpose.append(TypeText[type-1])
 
-print("The enterprise has the following purpose of the presence in social media:\n" )
+print("The following life satisfaction sentiments were identified:\n" )
 c = Counter(purpose)
 for letter in c:
-print ('%s: %d' % (letter, c[letter]))
+    print ('%s: %d' % (letter, c[letter]))
