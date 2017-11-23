@@ -55,15 +55,16 @@ The goal of this step is to know the accuracy of your training dataset.<br/>
 You have to execute the file like this:<br/>
 python3 WP7_STEP2_testing_dataset.py<br/>
 Then analyze the results, like this:<br/><br/>
-               precision    recall  f1-score   support<br/>
-        happy       0.62      0.75      0.68        56<br/>
-      neutral       0.60      0.71      0.65        34<br/>
-         calm       0.43      0.30      0.35        10<br/>
-        upset       0.67      0.15      0.25        13<br/>
-    depressed       0.59      0.62      0.60        21<br/>
-  discouraged       0.59      0.50      0.54        20<br/>
-indeterminate       0.00      0.00      0.00         3<br/>
-  avg / total       0.59      0.60      0.58       157<br/>
+Testing the training dataset accuracy...<br/>
+             precision    recall  f1-score   support<br/>
+<br/>
+          1       1.00      1.00      1.00         2<br/>
+          2       0.67      1.00      0.80         2<br/>
+          4       1.00      1.00      1.00         1<br/>
+          5       0.67      1.00      0.80         2<br/>
+          7       1.00      0.33      0.50         3<br/>
+<br/>
+avg / total       0.87      0.80      0.77        10<br/>
 <br/>
 It means that dataset still need some enhancement for a few keywords.<br/>
 <br/>
