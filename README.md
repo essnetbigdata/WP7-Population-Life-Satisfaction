@@ -45,17 +45,17 @@ Sentiment number must be like this:<br>
 <li>6-discouraged
 <li>7-indeterminate
 </ul>
-No.	Tweet	Sentiment SentimentNumber<br/>
-1;Wieczorny spacer :) Coś przyjemnego na koniec dnia :D  #spacer #zima #odpoczynek;happy;1<br/>
-2;#spacer w otoczeniu pięknej śnieżnej zimy #odpoczynek;neutral;2<br/>
-3;Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend;neutral;2<br/><br/>
+No.	Sentiment Tweet SentimentNumber<br/>
+1;happy;Wieczorny spacer :) Coś przyjemnego na koniec dnia :D  #spacer #zima #odpoczynek;1<br/>
+2;neutral;#spacer w otoczeniu pięknej śnieżnej zimy #odpoczynek;2<br/>
+3;neutral;Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend;2<br/><br/>
 <b>2a.2. Prepare the testing data</b><br/>
 Save this file as <i>WP7_training_data_2a.csv</i> because it will be used in the next step.<br/>
 Prepare the testing dataset with sentiments line after another, scrapped from Twitter, like this:<br/>
 Seeking for happiness in the distance<br/>
-I don't have any feelings <br/>
-I am so quiet <br/>
-I am so upset <br/>
+I don't have any feelings<br/>
+I am so quiet<br/>
+I am so upset<br/>
 Feeling very depressed<br/>
 I will do nothing - so discouraged<br/>
 Not determined<br/><br/>
