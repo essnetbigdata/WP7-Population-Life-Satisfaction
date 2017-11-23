@@ -49,11 +49,22 @@ No.	Tweet	Sentiment SentimentNumber<br/>
 1;Wieczorny spacer :) Coś przyjemnego na koniec dnia :D  #spacer #zima #odpoczynek;happy;1<br/>
 2;#spacer w otoczeniu pięknej śnieżnej zimy #odpoczynek;neutral;2<br/>
 3;Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend;neutral;2<br/>
-Save this file as <i>WP7_training_data.csv</i> because it will be used in the next step.<br/>
-<b>2a.2. Test the dataset with the training data</b><br/>
+<b>2a.2. Prepare the testing data</b><br/>
+Save this file as <i>WP7_training_data_2a.csv</i> because it will be used in the next step.<br/>
+Prepare the testing dataset with sentiments line after another, scrapped from Twitter, like this:<br/>
+Seeking for happiness in the distance<br/>
+I don't have any feelings <br/>
+I am so quiet <br/>
+I am so upset <br/>
+Feeling very depressed<br/>
+I will do nothing - so discouraged<br/>
+Not determined<br/><br/>
+And save this in the file:<br/>
+WP7_testing_data_2a.csv<br/><br/>
+<b>2a.3. Test the dataset with the training data</b><br/>
 The goal of this step is to know the accuracy of your training dataset.<br/>
 You have to execute the file like this:<br/>
-python3 WP7_STEP2_testing_dataset.py<br/>
+python3 WP7_STEP2a_testing_dataset.py<br/>
 Then analyze the results, like this:<br/><br/>
 Testing the training dataset accuracy...<br/>
              precision    recall  f1-score   support<br/>
@@ -66,7 +77,7 @@ Testing the training dataset accuracy...<br/>
 <br/>
 avg / total       0.87      0.80      0.77        10<br/>
 <br/>
-It means that dataset still need some enhancement for a few keywords.<br/>
+It means that training dataset is ok (0.87).<br/>
 <br/>
 <b>STEP 2b (optional). Testing the training dataset with SKLEARN</b><br/>
 <b>2b.1. Combine all CSV files into one</b><br/>
