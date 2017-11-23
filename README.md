@@ -48,7 +48,7 @@ Sentiment number must be like this:<br>
 No.	Tweet	Sentiment SentimentNumber<br/>
 1;Wieczorny spacer :) Coś przyjemnego na koniec dnia :D  #spacer #zima #odpoczynek;happy;1<br/>
 2;#spacer w otoczeniu pięknej śnieżnej zimy #odpoczynek;neutral;2<br/>
-3;Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend;neutral;2<br/>
+3;Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend;neutral;2<br/><br/>
 <b>2a.2. Prepare the testing data</b><br/>
 Save this file as <i>WP7_training_data_2a.csv</i> because it will be used in the next step.<br/>
 Prepare the testing dataset with sentiments line after another, scrapped from Twitter, like this:<br/>
