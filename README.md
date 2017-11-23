@@ -32,18 +32,53 @@ Based on your collected CSV files, add additional column named sentiment and try
 You can change the list according to your needs but for comparison purposes it would be better to collect the same list.
 Based on this list the final results will be identified by Machine Learning algorithm.<br/>
 <br/>
-<b>STEP 2. Testing the training dataset</b><br/>
-<b>2.1. Combine all CSV files into one</b><br/>
+<b>STEP 2a. Testing the training dataset with NLTK, PANDAS and SKLEARN</b><br/>
+<b>2a.1. Combine all CSV files into one</b><br/>
+You can just copy/paste to CSV file to have all sentiments in one CSV sheet.<br/>
+Sentiment number must be like this:<br>
+<ul>
+<li>1-happy
+<li>2-neutral
+<li>3-calm
+<li>4-upset
+<li>5-depressed
+<li>6-discouraged
+<li>7-indeterminate
+</ul>
+No.	Tweet	Sentiment SentimentNumber<br/>
+1;Wieczorny spacer :) Coś przyjemnego na koniec dnia :D  #spacer #zima #odpoczynek;happy;1<br/>
+2;#spacer w otoczeniu pięknej śnieżnej zimy #odpoczynek;neutral;2<br/>
+3;Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend;neutral;2<br/>
+Save this file as <i>WP7_training_data.csv</i> because it will be used in the next step.<br/>
+<b>2b.2. Test the dataset with the training data</b><br/>
+The goal of this step is to know the accuracy of your training dataset.<br/>
+You have to execute the file like this:<br/>
+python3 WP7_STEP2_testing_dataset.py<br/>
+Then analyze the results, like this:<br/><br/>
+               precision    recall  f1-score   support<br/>
+        happy       0.62      0.75      0.68        56<br/>
+      neutral       0.60      0.71      0.65        34<br/>
+         calm       0.43      0.30      0.35        10<br/>
+        upset       0.67      0.15      0.25        13<br/>
+    depressed       0.59      0.62      0.60        21<br/>
+  discouraged       0.59      0.50      0.54        20<br/>
+indeterminate       0.00      0.00      0.00         3<br/>
+  avg / total       0.59      0.60      0.58       157<br/>
+<br/>
+It means that dataset still need some enhancement for a few keywords.<br/>
+<br/>
+<b>STEP 2b (optional). Testing the training dataset with SKLEARN</b><br/>
+<b>2b.1. Combine all CSV files into one</b><br/>
 You can just copy/paste to CSV file to have all sentiments in one CSV sheet.<br/>
 No.	Tweet	Sentiment<br/>
 1	Wieczorny spacer :) Coś przyjemnego na koniec dnia :D  #spacer #zima #odpoczynek	happy<br/>
 2	#spacer w otoczeniu pięknej śnieżnej zimy #odpoczynek 	neutral <br/>
 3	Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend	neutral <br/>
 Save this file as <i>WP7_training_data.csv</i> because it will be used in the next step.<br/>
-<b>2.2. Test the dataset with the training data</b><br/>
+<b>2b.2. Test the dataset with the training data</b><br/>
 The goal of this step is to know the accuracy of your training dataset.<br/>
 You have to execute the file like this:<br/>
-python3 WP7_STEP2_testing_dataset.py<br/>
+python3 WP7_STEP2_testing_dataset_optional.py<br/>
 Then analyze the results, like this:<br/><br/>
                precision    recall  f1-score   support<br/>
         happy       0.62      0.75      0.68        56<br/>
