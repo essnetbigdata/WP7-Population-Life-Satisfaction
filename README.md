@@ -50,7 +50,7 @@ No.	Tweet	Sentiment SentimentNumber<br/>
 2;#spacer w otoczeniu pięknej śnieżnej zimy #odpoczynek;neutral;2<br/>
 3;Trochę odpoczynku w rodzinnym mieście. #odpoczynek #weekend;neutral;2<br/>
 Save this file as <i>WP7_training_data.csv</i> because it will be used in the next step.<br/>
-<b>2b.2. Test the dataset with the training data</b><br/>
+<b>2a.2. Test the dataset with the training data</b><br/>
 The goal of this step is to know the accuracy of your training dataset.<br/>
 You have to execute the file like this:<br/>
 python3 WP7_STEP2_testing_dataset.py<br/>
